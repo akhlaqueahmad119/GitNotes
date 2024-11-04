@@ -1,3 +1,5 @@
 file2 text
 
 how are you
+
+i am fine
