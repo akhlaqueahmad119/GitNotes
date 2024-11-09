@@ -14,21 +14,21 @@ Github is a web-based hosting service for Git repositories. Github is an online 
 
 Before Git became mainstream, version control systems were used by developers to manage their code. They were called SCCS (Source Code Control System). SCCS was a proprietary software that was used to manage the history of code. It was expensive and not very user-friendly. Git was created to replace SCCS and to make version control more accessible and user-friendly. Some commong version control systems are Subversion (SVN), CVS, and Perforce.
 
-Check your git version
+Check your git version :
 git --version
 
 
- Repository means folder 
+epository means folder 
 git status
 
-Your config settings
+Your config settings:
 git config --global user.email "your-email@example.com"
 git config --global user.name "Your Name"
 
  Now you can check your config settings: 
 git config --list
 
- Creating a repository 
+Creating a repository:
 git status
 git init
 
@@ -36,21 +36,21 @@ git init
 WRITE -> ADD -> COMMIT 
 
 
- Commit 
+ Commit :
 git commit -m "commit message"
 git status
 
 
- Logs
+ Logs:
 git log
 git log --oneline 
 
 
-change default code editor 
+change default code editor:
 git config --global core.editor "code --wait"
 
 
-Creating a new branch
+Creating a new branch:
 git branch
 git branch bug-fix
 git switch bug-fix
@@ -70,12 +70,12 @@ git switch -c dark-mode - This command creates a new branch called dark-mode. th
 git checkout orange-mode - This command switches to the orange-mode branch.
 
 
-Note
+Note:
 Commit before switching to a branch
 Go to .git folder and checkout to the HEAD file
 
 
-Merging branches 
+Merging branches :
 git checkout main
 git merge bug-fix
 
@@ -85,45 +85,45 @@ git merge bug-fix - This command merges the bug-fix branch into the main branch.
 
 
 
- Rename a branch 
+ Rename a branch :
 git branch -m <old-branch-name> <new-branch-name>
 
 
- Delete a branch 
+ Delete a branch :
 git branch -d <branch-name>
 
-Checkout a branch
+Checkout a branch:
 git checkout <branch-name>
 
-List all branches
+List all branches:
 git branch
 
-Git Stash
+Git Stash:
 git stash
 
 
-Naming the stash 
+Naming the stash: 
 git stash save "work in progress on X feature"
 
-View the stash list
+View the stash list:
 git stash list
 
-Apply the stash
+Apply the stash:
 git stash apply
 
-Apply the specific stash
+Apply the specific stash:
 git stash apply stash@{0}
 
 
- Applying and dropping the stash
+ Applying and dropping the stash:
 git stash pop
 
-Drop the stash
+Drop the stash:
 git stash drop
 
 
-<!-- Applying stash to a specific branch -->
+Applying stash to a specific branch:
 git stash apply stash@{0} <branch-name>
 
-<!-- Clearing the stash -->
+Clearing the stash:
 git stash clear
